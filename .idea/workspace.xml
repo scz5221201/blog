@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="79f1fbbe-82d9-496c-8493-67742093db95" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../loginintercepter/src/main/java/com/example/loginintercepter/LoginintercepterApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blog-master/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blog-master/.mvn/wrapper/MavenWrapperDownloader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blog-master/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blog-master/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blog-master/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blog-master/blog.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blog-master/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blog-master/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blog-master/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blog-master/src/main/java/hzy/life/blog/BlogApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blog-master/src/main/java/hzy/life/blog/controller/GithubAuthController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blog-master/src/main/java/hzy/life/blog/controller/IndexController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blog-master/src/main/java/hzy/life/blog/controller/PublishController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blog-master/src/main/java/hzy/life/blog/dto/AccessTokenDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blog-master/src/main/java/hzy/life/blog/dto/GithubUser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blog-master/src/main/java/hzy/life/blog/dto/UserQuestion.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blog-master/src/main/java/hzy/life/blog/mapper/OpenUserMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blog-master/src/main/java/hzy/life/blog/mapper/QuestionMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blog-master/src/main/java/hzy/life/blog/mapper/UserQuestionMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blog-master/src/main/java/hzy/life/blog/model/OpenUser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blog-master/src/main/java/hzy/life/blog/model/Question.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blog-master/src/main/java/hzy/life/blog/provider/GithubProvider.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blog-master/src/main/java/hzy/life/blog/service/AccessTokenDtoService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blog-master/src/main/java/hzy/life/blog/service/OpenUserService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blog-master/src/main/java/hzy/life/blog/service/QuestionService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blog-master/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blog-master/src/main/resources/static/css/bootstrap-theme.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blog-master/src/main/resources/static/css/bootstrap-theme.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blog-master/src/main/resources/static/css/bootstrap-theme.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blog-master/src/main/resources/static/css/bootstrap-theme.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blog-master/src/main/resources/static/css/bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blog-master/src/main/resources/static/css/bootstrap.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blog-master/src/main/resources/static/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blog-master/src/main/resources/static/css/bootstrap.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blog-master/src/main/resources/static/css/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blog-master/src/main/resources/static/fonts/glyphicons-halflings-regular.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blog-master/src/main/resources/static/fonts/glyphicons-halflings-regular.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blog-master/src/main/resources/static/fonts/glyphicons-halflings-regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blog-master/src/main/resources/static/fonts/glyphicons-halflings-regular.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blog-master/src/main/resources/static/fonts/glyphicons-halflings-regular.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blog-master/src/main/resources/static/img/index.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blog-master/src/main/resources/static/js/bootstrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blog-master/src/main/resources/static/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blog-master/src/main/resources/static/js/npm.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blog-master/src/main/resources/templates/framework.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blog-master/src/main/resources/templates/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blog-master/src/main/resources/templates/publish.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blog-master/src/test/java/hzy/life/blog/BlogApplicationTests.java" beforeDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1RMCYRPv5H6iKuC4OW8QvOusMW9" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="restartRequiresConfirmation" value="false" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="BlogApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="blog" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="hzy.life.blog.BlogApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="79f1fbbe-82d9-496c-8493-67742093db95" name="Default Changelist" comment="" />
+      <created>1569467626392</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1569467626392</updated>
+      <workItem from="1569467633340" duration="9268000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

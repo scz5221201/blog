@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Publish</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
+    <script src="js/jQuery3.4.1.js"></script>
+    <script src="js/bootstrap.min.js" type="application/javascript"></script>
+</head>
+<body style="background-color: #efefef">
+
+<div th:replace="index::nav"></div>
+
+<div class="container-fluid" style="background-color: white;margin-top: 40px;margin-left: 200px;margin-right: 200px">
+    <div class="row">
+        <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
+
+            <form action="/publish" method="post">
+                <div class="form-group" style="padding-top: 30px">
+                    <label for="title">问题标题（简单扼要）:</label>
+                    <input type="text" class="form-control" id="title" name="title" th:value="${title}"
+                           placeholder="问题标题">
+                </div>
+                <div class="form-group" style="padding-top: 10px">
+                    <label for="content">问题补充 (必填，请参照右侧提示):</label>
+                    <textarea class="form-control" id="content" name="content" th:value="${content}" cols="30"
+                              rows="10"></textarea>
+                </div>
+                <div class="form-group" style="padding-top: 10px">
+                    <label for="tag">标签:</label><br>
+                    <input type="text" id="tag" name="tag" th:value="${tag}">
+                </div>
+                <button type="submit" class="btn btn-success" style="margin-bottom: 20px">提交</button>
+            </form>
+            <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12 alert alert-danger" th:text="${error}"
+                 th:if="${error!=null}">
+            </div>
+
+        </div>
+        <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12" style="border-left:1px solid #e6e6e6">
+            <div><h4><span class="glyphicon glyphicon-user" aria-hidden="true"></span> 活跃用户</h4></div>
+
+            <div class="media">
+                <div class="media-left">
+                    <a href="#">
+                        <img class="media-object" src="img/index.jpg" style="width: 40px;height: 40px">
+                    </a>
+                </div>
+                <div class="media-body">
+                    <h4 class="media-heading" style="padding-left: 5px;padding-top: 10px">Jim</h4>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+
+<div class="footer" th:replace="index::footer">
+    <a href="http://www.jxrtvu.com/gczyxy/">Copyright © 2019 江西工程职业学院软件工作室</a>
+</div>
+</body>
+</html>

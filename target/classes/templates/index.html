@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
+    <script src="js/jQuery3.4.1.js"></script>
+    <script src="js/bootstrap.min.js" type="application/javascript"></script>
+    <title>Get it</title>
+</head>
+<body style="background-color: #efefef">
+<div th:fragment="nav">
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header" style="padding-left: 200px">
+                <a class="navbar-brand" href="/">Home</a>
+                <a class="navbar-brand" href="/java">Java</a>
+                <a class="navbar-brand" href="/html">Html/css</a>
+                <a class="navbar-brand" href="/javascript">Javascript</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <form class="navbar-form navbar-left">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                    </div>
+                    <button type="submit" class="btn btn-default">搜索</button>
+                </form>
+                <ul class="nav navbar-nav navbar-right" style="margin-right: 200px">
+                    <li th:if="${session.user!=null}">
+                        <a href="/publish">发布</a>
+                    </li>
+
+                    <li th:if="${session.user==null}">
+                        <a href="https://github.com/login/oauth/authorize?client_id=0a3b4005f879ad0e07b3&state=1&scope=user">登录</a>
+                    </li>
+
+                    <li class="dropdown" th:if="${session.user!=null}">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                           aria-expanded="false">
+                            <span th:text="${session.user.getName()}"></span>
+                            <span class="caret"></span>
+                        </a>
+<!--                        <img th:src="@{session.user.getAvatar_url()}">-->
+                        <ul class="dropdown-menu">
+                            <li><a href="/profile/question">我发布的问题</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">退出</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>
+
+<div class="container-fluid" style="background-color: white;margin-top: 40px;margin-left: 200px;margin-right: 200px">
+    <div class="row">
+        <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
+            <div>
+                <ul class="nav nav-tabs aw-nav-tabs active hidden-xs">
+                    <li role="presentation" class="active"><a href="#">最新</a></li>
+                    <li role="presentation"><a href="/publish">热门</a></li>
+                    <li role="presentation"><a href="#">消灭零回复</a></li>
+                </ul>
+            </div>
+
+
+            <div class="media" th:each="questionList:${quesList}">
+                <div class="media-left">
+                    <a href="#">
+                        <img class="media-object" th:src="${questionList.avatar_url}" style="width: 50px;height: 50px">
+                    </a>
+                </div>
+                <div class="media-body">
+                    <h4 class="media-heading" th:text="${questionList.title}"></h4>
+                    <span class="text-color-999"><span th:text="${questionList.comment_count}"></span>人回复了问题  • <span
+                            th:text="${questionList.view_count}"></span> 次浏览 • 创建于<span th:text="${#dates.format(questionList.gmt_create,'yyyy-MM-dd HH:mm')}"></span></span>
+                </div>
+                <hr>
+            </div>
+
+            <div class="modal-footer no-margin-top">
+                <div class="col-md-6">
+                    当前第 [[${pageInfo.pageNum}]]页,共 [[${pageInfo.pages}]] 页.一共 [[${pageInfo.total}]] 条记录
+                </div>
+
+                <ul class="pagination pull-right no-margin">
+                    <li>
+                        <a th:href="'/?pageNum=1'">首页</a>
+                    </li>
+
+                    <li class="prev" th:if="${pageInfo.hasPreviousPage}">
+                        <a th:href="'/index?pageNum='+${pageInfo.prePage}">
+                            <i class="ace-icon fa fa-angle-double-left"></i>
+                        </a>
+                    </li>
+                    <!--遍历条数-->
+                    <li th:each="nav:${pageInfo.navigatepageNums}">
+                        <a th:href="'/?pageNum='+${nav}" th:text="${nav}" th:if="${nav != pageInfo.pageNum}"></a>
+                        <span style="font-weight: bold;background: #6faed9;" th:if="${nav == pageInfo.pageNum}"
+                              th:text="${nav}"></span>
+                    </li>
+
+                    <li class="next" th:if="${pageInfo.hasNextPage}">
+                        <a th:href="'/?pageNum='+${pageInfo.nextPage}">
+                            <i class="ace-icon fa fa-angle-double-right"></i>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a th:href="'/?pageNum='+${pageInfo.pages}">尾页</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12" style="border-left:1px solid #e6e6e6">
+            <div><h4><span class="glyphicon glyphicon-user" aria-hidden="true"></span> 活跃用户</h4></div>
+
+            <div class="media">
+                <div class="media-left">
+                    <a href="#">
+                        <img class="media-object" src="img/index.jpg" style="width: 40px;height: 40px">
+                    </a>
+                </div>
+                <div class="media-body">
+                    <h4 class="media-heading" style="padding-left: 5px;padding-top: 10px">Jim</h4>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="footer" th:fragment="footer">
+    <a href="http://www.jxrtvu.com/gczyxy/">Copyright © 2019 江西工程职业学院软件工作室</a>
+</div>
+
+
+</body>
+</html>
